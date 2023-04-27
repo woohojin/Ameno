@@ -1,5 +1,4 @@
-*.env
-.env
 .bat
+config.json
 node_modules/
 git rm --cached .env
