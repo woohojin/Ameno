@@ -1,0 +1,6 @@
+*.env
+.env
+introduce.js
+words.js
+bad_words.js
+ git rm --cached .env
