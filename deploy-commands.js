@@ -40,4 +40,3 @@ const rest = new REST().setToken(TOKEN);
     console.error(error);
   }
 })();
-

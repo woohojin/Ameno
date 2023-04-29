@@ -1,10 +1,12 @@
-const dotenv = require("dotenv");
 const fs = require("node:fs");
 const path = require("node:path");
 const { TOKEN } = require("./config.json");
 const { Client, Collection, Events, GatewayIntentBits } = require("discord.js");
 const client = new Client({ intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent, GatewayIntentBits.GuildMembers] });
-dotenv.config();
+
+module.exports = {
+  client: client,
+};
 
 client.commands = new Collection();
 
@@ -38,4 +40,5 @@ for (const file of eventFiles) {
     client.on(event.name, (...args) => event.execute(...args));
   }
 }
+
 client.login(TOKEN);
