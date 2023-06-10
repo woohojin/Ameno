@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/woohojin/Ameno#readme",
   "dependencies": {
+    "@discordjs/voice": "github:discordjs/voice",
     "discord.js": "^14.9.0",
-    "openai": "^3.2.1"
+    "libsodium-wrappers": "^0.7.11",
+    "openai": "^3.2.1",
+    "ytdl-core": "^4.11.4"
   }
 }
+

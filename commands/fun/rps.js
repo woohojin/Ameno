@@ -6,7 +6,7 @@ module.exports = {
   async execute(interaction) {
     await interaction.reply("가위 | 바위 | 보 중에 입력하세요.");
 
-    index.client.on("messageCreate", async (message) => {
+    index.client.once("messageCreate", async (message) => {
       if (message.author.bot) return;
 
       const command = message.content;
